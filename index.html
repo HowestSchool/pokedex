@@ -5,15 +5,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <meta charset="UTF-8">
     <meta name="author" content="Jorne Suwier" />
-    <title>Title</title>
+    <title>Pokédex</title>
 </head>
-<body>
+<h1>Pokédex</h1>
+
+<input type="text" placeholder="Search..">
+
 <form>
-    <label for="name">Pokemon naam:</label>
-    <input type="text" id="name" list="pokemonnamen">
-    <input type="submit" value="Zoeken">
-    <datalist id="pokemonnamen"></datalist>
+
+    <fieldset>
+        <legend>Kies u type</legend>
+
+        <select>
+
+            <option label="vuur">vuur</option>
+            <option label="water">water</option>
+        </select>
+    </fieldset>
+
 </form>
+<body>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
