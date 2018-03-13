@@ -7,24 +7,20 @@
     <meta name="author" content="Jorne Suwier" />
     <title>Pokédex</title>
 </head>
+<body>
 <h1>Pokédex</h1>
-
-<input type="text" placeholder="Search..">
-
 <form>
-
     <fieldset>
-        <legend>Kies u type</legend>
-
-        <select>
-
-            <option label="vuur">vuur</option>
-            <option label="water">water</option>
+        <label for="name">Pokemon naam:</label>
+        <input type="text" id="name" placeholder="Search..">
+        <label for="type">Kies u type</label>
+        <select id="type">
+            <option value="vuur">vuur</option>
+            <option value="water">water</option>
         </select>
     </fieldset>
-
+    <datalist id="names"></datalist>
 </form>
-<body>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
